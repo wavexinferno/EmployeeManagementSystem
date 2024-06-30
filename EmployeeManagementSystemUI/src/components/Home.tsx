@@ -19,7 +19,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     fetchData();
-  }, []); // Fetch data on component mount
+  }, []); 
 
   const fetchData = async () => {
     try {
@@ -112,7 +112,7 @@ const Home: React.FC = () => {
           className="form-input"
         />
         <input
-          type="text"
+          type="number"
           name="departmentId"
           placeholder="Department ID"
           value={currentEmployee?.departmentId || ''}
@@ -120,7 +120,7 @@ const Home: React.FC = () => {
           className="form-input"
         />
         <input
-          type="text"
+          type="number"
           name="roleId"
           placeholder="Role ID"
           value={currentEmployee?.roleId || ''}
